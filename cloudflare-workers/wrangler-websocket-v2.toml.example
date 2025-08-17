@@ -1,0 +1,38 @@
+name = "your-websocket-worker-name"
+main = "src/websocket-host-worker-v2.js"
+compatibility_date = "2024-01-01"
+logpush = true
+
+# Enable real-time logs and observability
+[observability]
+enabled = true
+
+# Development environment variables
+[vars]
+AUTH_TOKEN = "your-auth-token-here"
+INTERNAL_API_KEY = "your-secure-internal-api-key-here"
+
+[env.production]
+route = { pattern = "wss://your-domain.com/websocket", zone_name = "your-domain.com" }
+
+# Enable observability for production
+[env.production.observability]
+enabled = true
+
+[env.production.vars]
+AUTH_TOKEN = "your-production-auth-token-here"
+INTERNAL_API_KEY = "your-production-internal-api-key-here"
+
+# KV Namespace - Create with: wrangler kv namespace create "KV_STORE"
+[[kv_namespaces]]
+binding = "KV_STORE"
+id = "your-kv-namespace-id-here"
+
+# Durable Objects configuration
+[[durable_objects.bindings]]
+name = "WEBSOCKET_HANDLER"
+class_name = "WebSocketHandler"
+
+[[migrations]]
+tag = "v2"
+new_classes = ["WebSocketHandler"]

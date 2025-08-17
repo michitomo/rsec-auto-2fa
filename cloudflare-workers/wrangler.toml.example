@@ -1,0 +1,27 @@
+name = "your-email-parser-worker-name"
+main = "src/email-parser-worker.js"
+compatibility_date = "2024-01-01"
+logpush = true
+
+# Enable real-time logs and observability
+[observability]
+enabled = true
+
+# Development environment variables
+[vars]
+WEBSOCKET_WORKER_URL = "https://your-websocket-worker.workers.dev"
+INTERNAL_API_KEY = "your-secure-internal-api-key-here"
+
+[env.production]
+route = { pattern = "your-domain.com/email/*", zone_name = "your-domain.com" }
+
+# Enable observability for production too
+[env.production.observability]
+enabled = true
+
+[[env.production.email_routing]]
+address = "2fa@your-domain.com"
+
+[env.production.vars]
+WEBSOCKET_WORKER_URL = "https://your-websocket-worker.workers.dev"
+INTERNAL_API_KEY = "your-production-internal-api-key-here"

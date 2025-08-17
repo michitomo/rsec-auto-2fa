@@ -1,0 +1,40 @@
+MIT License
+
+Copyright (c) 2024 Rakuten Securities 2FA Automation Project Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+ADDITIONAL DISCLAIMER:
+
+This software is provided for educational and research purposes only. 
+The use of this software may violate terms of service of third-party services.
+Users are solely responsible for ensuring their use complies with all applicable 
+laws, regulations, and terms of service.
+
+The authors and contributors of this software explicitly disclaim any responsibility
+for any misuse of this software, including but not limited to unauthorized access
+to accounts, violation of security measures, or any illegal activities.
+
+By using this software, you acknowledge and agree that:
+1. You will use this software only on accounts you own or have explicit permission to access
+2. You understand the security implications of automating two-factor authentication
+3. You accept all risks associated with the use of this software
+4. You will not hold the authors liable for any consequences arising from the use of this software

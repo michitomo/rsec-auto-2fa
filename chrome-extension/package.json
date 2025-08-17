@@ -1,0 +1,16 @@
+{
+  "name": "rakuten-2fa-chrome-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for Rakuten Securities 2FA automation",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r src/* dist/ && cp manifest.json dist/",
+    "watch": "nodemon --watch src --exec npm run build",
+    "package": "npm run build && cd dist && zip -r ../rakuten-2fa.zip *"
+  },
+  "keywords": ["chrome-extension", "2fa", "automation"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}

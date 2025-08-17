@@ -1,0 +1,23 @@
+{
+  "name": "rakuten-2fa-cloudflare-workers",
+  "version": "1.0.0",
+  "description": "Cloudflare Workers for Rakuten Securities 2FA automation",
+  "main": "index.js",
+  "scripts": {
+    "dev:email": "wrangler dev --config wrangler.toml",
+    "dev:websocket": "wrangler dev --config wrangler-websocket.toml",
+    "deploy:email": "wrangler deploy --config wrangler.toml",
+    "deploy:websocket": "wrangler deploy --config wrangler-websocket.toml",
+    "deploy:all": "npm run deploy:email && npm run deploy:websocket",
+    "tail:email": "wrangler tail --config wrangler.toml",
+    "tail:websocket": "wrangler tail --config wrangler-websocket.toml",
+    "logs:enable": "wrangler tail --config wrangler.toml --format=pretty",
+    "logs:websocket": "wrangler tail --config wrangler-websocket-v2.toml --format=pretty"
+  },
+  "keywords": ["cloudflare", "workers", "2fa", "websocket"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
